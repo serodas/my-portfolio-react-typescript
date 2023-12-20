@@ -1,0 +1,34 @@
+.header {
+	display: block;
+	grid-area: header;
+	width: 100%;
+	height: 100%;
+	font-family: "Google Sans Regular";
+	margin-top: 2rem;
+}
+
+.header nav ul {
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	padding: 10px;
+}
+
+.header a {
+	text-decoration: none;
+	color: #383838;
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+
+.menu__btn {
+	display: none;
+	border: none;
+	background-color: transparent;
+}
+
+@media (max-width: 684px) {
+	.header .nav {
+		display: none;
+	}
+}

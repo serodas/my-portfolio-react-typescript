@@ -6,7 +6,7 @@
   Software Developer Portfolio Template in React with TypeScript following best practices: Unit and end-to-end tests, Continuous Integration, and linting.
   <br />
   <br />
-  <a href="#">Stars are welcome 😊</a>
+  <a href="https://github.com/serodas/my-portfolio-react-typescript">Stars are welcome 😊</a>
 </p>
 
 ## ⚡ Using this template
