@@ -1,15 +1,19 @@
-import { ListItems } from "../listItem/list_items";
+import { InMemoryListItemRepository } from "../../infrastructure/InMemoryListItemRepository";
 import { ListItem } from "../listItem/ListItem";
 import styles from "./Header.module.scss";
 
 export const Header = () => {
+	const repository = new InMemoryListItemRepository();
+
+	const listItems = repository.search();
+
 	return (
 		<>
 			<header className={styles.header}>
 				<nav>
 					<ul>
-						{ListItems.map((listItem) => (
-							<ListItem listItem={listItem} />
+						{listItems.map((listItem) => (
+							<ListItem listItem={listItem} key={listItem.id} />
 						))}
 						<li>
 							<button className={styles.menu__btn}>

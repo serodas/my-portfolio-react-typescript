@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 
+import { ListItems } from "../src/list_items";
 import { Header } from "../src/sections/header/Header";
-import { ListItems } from "../src/sections/listItem/list_items";
 
 describe("Header section", () => {
 	it("show all list items", async () => {

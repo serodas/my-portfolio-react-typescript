@@ -1,4 +1,4 @@
-import { ListItemInterface } from "./list_items";
+import { ListItemInterface } from "../../domain/listItem/ListItemInterface";
 import styles from "./ListItem.module.scss";
 
 interface ListItemProps {
