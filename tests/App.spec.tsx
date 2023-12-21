@@ -5,7 +5,7 @@ import { App } from "../src/App";
 test("App component display header", () => {
 	render(<App />);
 
-	const heading = screen.getByText(/⚡⚛️ Vite React Best Practices Template \(by Codely\)/i);
+	const heading = screen.getByText(/Hola 👋./i);
 
 	expect(heading).toBeInTheDocument();
 });
