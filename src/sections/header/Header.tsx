@@ -1,6 +1,6 @@
 import { ListItemRepository } from "../../domain/listItem/ListItemRepository";
-import { ListItem } from "../listItem/ListItem";
 import styles from "./Header.module.scss";
+import { ListItem } from "./listItem/ListItem";
 
 export const Header = ({ repository }: { repository: ListItemRepository }) => {
 	const listItems = repository.search();
