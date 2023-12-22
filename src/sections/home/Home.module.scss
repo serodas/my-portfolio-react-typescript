@@ -1,0 +1,192 @@
+.section {
+  display: inline-flex;
+  flex-wrap: wrap;
+  grid-area: section;
+}
+
+.greeting_text__container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.greeting_text__title {
+  display: flex;
+  align-items: left;
+  font-size: 4rem;
+  line-height: 5px;
+  font-family: "Google Sans Bold";
+  margin: 30px;
+  width: 100%;
+}
+
+.greeting_text__subtitle {
+  font-size: 2rem;
+  line-height: 40px;
+  margin: 30px 30px 30px 0;
+  font-family: "Google Sans Medium";
+  color: #868e96;
+}
+
+.greeting_text__fullname {
+  color: #4BA598;
+}
+
+.social_media__container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.social-media__container a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.icon_button i {
+  color: white;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  width: 2.6rem;
+  margin-bottom: 10px;
+}
+
+.linkedin i {
+  background-color: #0e76a8;
+  transition: all 0.2s ease-in-out;
+}
+
+.linkedin i:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #0e76a8;
+}
+
+.github i {
+  background-color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+.github i:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #333;
+}
+
+.icon__container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon__container figure {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon__container figure figcaption a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #8b97b2;
+  font-family: "Google Sans Regular";
+}
+
+.icon__container svg,
+img {
+  width: 70%;
+  margin-top: 30px;
+}
+
+.software_skills__container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.software_skills__title {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.1;
+  font-family: "Google Sans Regular";
+  text-align: center;
+  color: #343434;
+  padding-bottom: 20px;
+}
+
+.software_skills__container__list {
+  font-size: 20px;
+  color: #8b97b2;
+  font-family: "Google Sans Regular";
+  padding: 0;
+}
+
+.software_skills__container__list li {
+  list-style: none;
+  margin: 0 20px 20px 0;
+}
+
+.software_skills__container__arquitecture {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dev_icons__container__soft_skills {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 100%;
+}
+
+.dev_icons__container__arquitecture {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.software_skill__container__inline {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.software_skill__container__inline figure {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.software_skill__container__inline figure figcaption {
+  font-size: 12px;
+  color: #8b97b2;
+  font-family: "Google Sans Regular";
+}
