@@ -1,11 +1,7 @@
 import { ListItemInterface } from "../../domain/listItem/ListItemInterface";
 import styles from "./ListItem.module.scss";
 
-interface ListItemProps {
-	listItem: ListItemInterface;
-}
-
-export const ListItem = ({ listItem }: ListItemProps) => {
+export const ListItem = ({ listItem }: { listItem: ListItemInterface }) => {
 	return (
 		<li className="nav">
 			<a href={listItem.url} className={styles[listItem.type]}>

@@ -1,10 +1,8 @@
-import { InMemoryListItemRepository } from "../../infrastructure/InMemoryListItemRepository";
+import { ListItemRepository } from "../../domain/listItem/ListItemRepository";
 import { ListItem } from "../listItem/ListItem";
 import styles from "./Header.module.scss";
 
-export const Header = () => {
-	const repository = new InMemoryListItemRepository();
-
+export const Header = ({ repository }: { repository: ListItemRepository }) => {
 	const listItems = repository.search();
 
 	return (
