@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 
 import { InMemoryListItemRepository } from "../src/infrastructure/InMemoryListItemRepository";
-import { Header } from "../src/sections/header/Header";
+import { Header } from "../src/sections/layout/header/Header";
 
 const repository = new InMemoryListItemRepository();
 
@@ -10,7 +10,7 @@ describe("Header section", () => {
 		render(<Header repository={repository} />);
 		const ListItems = repository.search();
 		const firstListItem = ListItems[0];
-		const firstHeaderItem = await screen.findByRole("link", {
+		await screen.findByRole("link", {
 			name: firstListItem.name,
 		});
 	});

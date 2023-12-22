@@ -1,4 +1,6 @@
-import { ListItemRepository } from "../../domain/listItem/ListItemRepository";
+import { Outlet } from "react-router-dom";
+
+import { ListItemRepository } from "../../../domain/listItem/ListItemRepository";
 import styles from "./Header.module.scss";
 import { ListItem } from "./listItem/ListItem";
 
@@ -31,6 +33,7 @@ export const Header = ({ repository }: { repository: ListItemRepository }) => {
 					</ul>
 				</nav>
 			</header>
+			<Outlet />
 		</>
 	);
 };
