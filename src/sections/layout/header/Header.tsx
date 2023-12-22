@@ -1,20 +1,36 @@
-import { Outlet } from "react-router-dom";
-
-import { ListItemRepository } from "../../../domain/listItem/ListItemRepository";
 import styles from "./Header.module.scss";
-import { ListItem } from "./listItem/ListItem";
 
-export const Header = ({ repository }: { repository: ListItemRepository }) => {
-	const listItems = repository.search();
-
+export const Header = () => {
 	return (
 		<>
 			<header className={styles.header}>
 				<nav>
 					<ul>
-						{listItems.map((listItem) => (
-							<ListItem listItem={listItem} key={listItem.id} />
-						))}
+						<li className="nav">
+							<a href="#" className={styles.home}>
+								Inicio
+							</a>
+						</li>
+						<li className="nav">
+							<a href="#" className={styles.education}>
+								Educación y Certificaciones
+							</a>
+						</li>
+						<li className="nav">
+							<a href="#" className={styles.experience}>
+								Experiencia
+							</a>
+						</li>
+						<li className="nav">
+							<a href="#" className={styles.projects}>
+								Proyectos
+							</a>
+						</li>
+						<li className="nav">
+							<a href="#" className={styles.contact}>
+								Contacto y CV
+							</a>
+						</li>
 						<li>
 							<button className={styles.menu__btn}>
 								<svg
@@ -33,7 +49,6 @@ export const Header = ({ repository }: { repository: ListItemRepository }) => {
 					</ul>
 				</nav>
 			</header>
-			<Outlet />
 		</>
 	);
 };

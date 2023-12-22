@@ -1,11 +1,13 @@
-import { InMemoryListItemRepository } from "../../infrastructure/InMemoryListItemRepository";
+import { Outlet } from "react-router-dom";
+
 import { Header } from "./header/Header";
 
-const repository = new InMemoryListItemRepository();
 export const Layout = () => {
 	return (
 		<>
-			<Header repository={repository}></Header>
+			<Header />
+			<h1>Hola 👋.</h1>
+			<Outlet />
 		</>
 	);
 };
