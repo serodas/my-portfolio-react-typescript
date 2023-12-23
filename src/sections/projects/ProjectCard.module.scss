@@ -1,0 +1,62 @@
+.project__container {
+  display: flex;
+  flex-direction: column;
+  background-color: #dce4f2;
+  border-radius: 5px;
+  height: 100%;
+  padding: 32px;
+}
+
+.project__container header {
+  font-family: "Google Sans Regular";
+  color: #343434;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -.5px;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.project__container p {
+  font-family: "Google Sans Regular";
+  color: #343434;
+  word-wrap: break-word;
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+}
+
+.tecnologies__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dev_icons__container__soft_skills {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 100%;
+}
+
+.software_skill__container__inline {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.software_skill__container__inline figure {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.software_skill__container__inline figure figcaption {
+  font-size: 12px;
+  color: #8b97b2;
+  font-family: "Google Sans Regular";
+}

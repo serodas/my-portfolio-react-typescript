@@ -4,6 +4,7 @@ import { EducationFactory } from "./sections/education/EducationFactory";
 import { Experience } from "./sections/experience/Experience";
 import { Home } from "./sections/home/Home";
 import { Layout } from "./sections/layout/Layout";
+import { ProjectFactory } from "./sections/projects/ProjectFactory";
 
 const router = createBrowserRouter([
 	{
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
 			{
 				path: "/experience",
 				element: <Experience />,
+			},
+			{
+				path: "/projects",
+				element: ProjectFactory.create(),
 			},
 		],
 	},
