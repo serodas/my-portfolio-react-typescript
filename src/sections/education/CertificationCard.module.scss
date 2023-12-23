@@ -1,0 +1,38 @@
+.certification_card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  margin: 2rem;
+}
+
+.certification_card:hover {
+  box-shadow: 0 20px 30px -10px #0003;
+}
+
+.certification_card figure {
+  text-align: center;
+  align-items: center;
+}
+
+.certification_text_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.certification_text__title a {
+  font-size: 1.5rem;
+  line-height: 40px;
+  margin: 30px 30px 30px 0;
+  font-family: "Google Sans Medium";
+	text-decoration: none;
+  color: #343434;
+}
+
+.certification_text__subtitle {
+  font-size: 1.5rem;
+  line-height: 40px;
+  margin: 30px 30px 30px 0;
+  font-family: "Google Sans Regular";
+  color: #868e96;
+}

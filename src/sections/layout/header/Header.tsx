@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import styles from "./Header.module.scss";
 
 export const Header = () => {
@@ -7,14 +9,14 @@ export const Header = () => {
 				<nav>
 					<ul>
 						<li className="nav">
-							<a href="#" className={styles.home}>
+							<NavLink to="/" className={styles.home}>
 								Inicio
-							</a>
+							</NavLink>
 						</li>
 						<li className="nav">
-							<a href="#" className={styles.education}>
-								Educación y Certificaciones
-							</a>
+							<NavLink to="/education" className={styles.education}>
+								Educación
+							</NavLink>
 						</li>
 						<li className="nav">
 							<a href="#" className={styles.experience}>

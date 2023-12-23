@@ -1,0 +1,143 @@
+.section {
+  display: inline-flex;
+  flex-wrap: wrap;
+  grid-area: section;
+}
+
+.icon__container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon__container figure {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon__container figure figcaption a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #8b97b2;
+  font-family: "Google Sans Regular";
+}
+
+.icon__container svg,
+.icon__container img {
+  width: 70%;
+  margin-top: 30px;
+}
+
+.education_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.education_container__border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #eee;
+  width: 90%;
+  margin: 2rem 0 2rem 4rem;
+  height: 30px;
+  transition: width 0.5s ease-in-out;
+}
+
+.education_container__border:hover {
+  border-color: #a9a7f9;
+  transition: width 0.5s ease-in-out;
+  width: 100%;
+}
+
+.degree_container {
+  display: inline-flex;
+  margin: 2rem 0;
+  width: 90%;
+}
+
+.degree_container img{
+  margin: 0;
+}
+
+.degree_text_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+	margin-left: 3rem;
+}
+
+.certifications_container {
+	display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 100%;
+}
+
+
+.education_text__container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.education_text__title {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.1;
+  font-family: "Google Sans Medium";
+  text-align: center;
+  color: #343434;
+}
+
+.education_subtext__title {
+  font-size: 30px;
+  font-family: 'Google Sans Regular';
+  margin: 30px 0 30px 0;
+  color: #343434;
+}
+
+.education_text__subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Google Sans Medium";
+  text-align: center;
+  color: #7f8daa;
+}
+
+.education__header {
+  font-size: 40px;
+  line-height: 1.1;
+  font-family: "Google Sans Regular";
+  text-align: center;
+  color: #343434;
+}
+
+.degree_text__title {
+  font-family: 'Google Sans Medium';
+  font-size: 23px;
+  color: #343434;
+}
+
+.degree_text__subtitle {
+  font-family: 'Google Sans Medium';
+  font-size: 18px;
+}
+
+.degree_text__subtitle a {
+  text-decoration: none;
+  color: #343434;
+}
+
+.degree_text__subtitle_year {
+  font-family: 'Google Sans Regular';
+  color: #343434
+}
