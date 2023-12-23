@@ -10,7 +10,7 @@ export const certifications = [
 	},
 	{
 		id: "ad345asdfafdsfsdfasdfs4rtt",
-		title: "Back-End Developer",
+		title: "Meta Back-End Developer Specialization",
 		issued_by: "Emitido por Coursera | Autorizado por Meta",
 		issued_on: "En Dic 2023",
 		link: "https://www.coursera.org/account/accomplishments/specialization/C3RDH2G9WJHN",

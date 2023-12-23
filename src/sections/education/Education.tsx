@@ -1,10 +1,12 @@
-import { certifications } from "../../certifications";
+import { CertificationRepository } from "../../domain/CertificationRepository";
 import { CertificationCard } from "./CertificationCard";
 import styles from "./Education.module.scss";
 import EducationSvg from "./education.svg";
 import UnadIcon from "./unad_icon.svg";
 
-export const Education = () => {
+export const Education = ({ repository }: { repository: CertificationRepository }) => {
+	const certifications = repository.search();
+
 	return (
 		<section className={styles.section}>
 			<div className={styles.icon__container}>

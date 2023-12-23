@@ -6,7 +6,7 @@ type IconTypes = {
 };
 
 const iconTypes: IconTypes = {
-	meta: () => <img src={MetaIcon} alt="meta icon" className="meta" />,
+	meta: () => <img src={MetaIcon} alt="meta icon" className="meta" width={160} height={160} />,
 	meta_backend: () => <img src={BadgeMetaBackendCertificate} alt="meta icon" className="meta" />,
 };
 

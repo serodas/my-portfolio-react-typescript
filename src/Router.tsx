@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { Education } from "./sections/education/Education";
+import { EducationFactory } from "./sections/education/EducationFactory";
 import { Home } from "./sections/home/Home";
 import { Layout } from "./sections/layout/Layout";
 
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "/education",
-				element: <Education />,
+				element: EducationFactory.create(),
 			},
 		],
 	},
