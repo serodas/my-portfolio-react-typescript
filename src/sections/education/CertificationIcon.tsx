@@ -1,13 +1,15 @@
+import BadgeMetaBackendCertificate from "./meta-back-end-developer-certificate.png";
 import MetaIcon from "./meta_icon.svg";
 
 type IconTypes = {
-	[key: string]: (color: string) => JSX.Element;
+	[key: string]: () => JSX.Element;
 };
 
 const iconTypes: IconTypes = {
-	meta: (color: string) => <img src={MetaIcon} alt="meta icon" className="meta" />,
+	meta: () => <img src={MetaIcon} alt="meta icon" className="meta" />,
+	meta_backend: () => <img src={BadgeMetaBackendCertificate} alt="meta icon" className="meta" />,
 };
 
-export const CertificationIcon = ({ icon, color }: { icon: keyof IconTypes; color: string }) => {
-	return <>{iconTypes[icon](color)}</>;
+export const CertificationIcon = ({ icon }: { icon: keyof IconTypes }) => {
+	return <>{iconTypes[icon]()}</>;
 };
