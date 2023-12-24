@@ -1,8 +1,9 @@
 import { certifications } from "../certifications";
+import { Certification } from "../domain/Certification";
 import { CertificationRepository } from "../domain/CertificationRepository";
 
 export class InMemoryCertificationRepository implements CertificationRepository {
-	search(): typeof certifications {
+	search(): Certification[] {
 		return certifications;
 	}
 }
