@@ -1,4 +1,3 @@
-import { ProjectInterface } from "../../domain/ProjectInterface";
 import { ProjectRepository } from "../../domain/ProjectRepository";
 import styles from "./Project.module.scss";
 import { ProjectCard } from "./ProjectCard";
@@ -27,7 +26,7 @@ export const Project = ({ repository }: { repository: ProjectRepository }) => {
 			</article>
 
 			<div className={styles.projects__container}>
-				{projects.map((project: ProjectInterface) => (
+				{projects.map((project) => (
 					<ProjectCard key={project.id} project={project} />
 				))}
 			</div>

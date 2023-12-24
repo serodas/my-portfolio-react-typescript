@@ -10,7 +10,9 @@ export const CertificationCard = ({ certification }: { certification: Certificat
 			</figure>
 			<div className={styles.certification_text_container}>
 				<h2 className={styles.certification_text__title}>
-					<a href={certification.link}>{certification.title}</a>
+					<a href={certification.link} target="_blank" rel="noreferrer">
+						{certification.title}
+					</a>
 				</h2>
 				<p className={styles.certification_text__subtitle}>{certification.issued_by}</p>
 				<p className={styles.certification_text__subtitle}>{certification.issued_on}</p>

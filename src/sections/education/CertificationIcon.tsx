@@ -1,5 +1,5 @@
+import MetaIcon from "../../assets/icons/meta_icon.svg";
 import BadgeMetaBackendCertificate from "./meta-back-end-developer-certificate.png";
-import MetaIcon from "./meta_icon.svg";
 
 type IconTypes = {
 	[key: string]: () => JSX.Element;
