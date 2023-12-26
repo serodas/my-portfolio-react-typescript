@@ -141,3 +141,66 @@
   font-family: 'Google Sans Regular';
   color: #343434
 }
+
+@media (max-width: 580px) {
+	.section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		grid-area: section;
+	}
+
+	.icon__container {
+		width: 100%;
+	}
+	
+	.education_text__container {
+		width: 100%;
+		padding: 0 20px;
+	}
+	
+	.education_text__title {
+		font-size: 30px;
+		margin-top: 20px;
+	}
+	
+	.education_subtext__title {
+		font-size: 20px;
+	}
+	
+	.education_text__subtitle {
+		font-size: 16px;
+		line-height: normal;
+	}
+	
+	.education_container__border {
+		margin: 20px 0;
+	}
+	
+	.education__header {
+		font-size: 30px;
+	}
+	
+	.degree_text_container {
+		margin: 0;
+		padding: 0 20px;
+	}
+	
+	.degree_text__title {
+		font-size: 16px;
+	}
+	
+	.degree_text__subtitle {
+		font-size: 14px;
+	}
+	
+	.degree_text__subtitle_year {
+		font-size: 12px;
+	}
+	
+	.education_container__header {
+		font-size: 30px;
+	}
+}
+

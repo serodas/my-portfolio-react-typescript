@@ -178,7 +178,11 @@
 		justify-content: center;
 		grid-area: section;
 	}
-	
+
+	.icon__container {
+		width: 100%;
+	}
+
 	.greeting_text__container {
 		width: 100%;
 		padding: 0 20px;
@@ -194,10 +198,6 @@
 		font-size: 16px;
 		line-height: normal;
 		margin-bottom: 20px;
-	}
-	
-	.icon__container {
-		width: 100%;
 	}
 	
 	.software_skills__container,
