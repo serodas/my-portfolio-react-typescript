@@ -20,6 +20,28 @@ export const ProjectCard = ({ project }: { project: ProjectInterface }) => {
 						))}
 					</ul>
 				</aside>
+				<aside className={styles.languages__container}>
+					<ul className={styles.dev_icons__container__soft_skills}>
+						<li className={styles.software_skill__container__inline}>
+							<figure>
+								<a href={project.github_url} target="_blank" rel="noreferrer">
+									<ProjectIcon icon="GitHub" />
+								</a>
+								<figcaption>GitHub</figcaption>
+							</figure>
+						</li>
+						{project.website_url && (
+							<li className={styles.software_skill__container__inline}>
+								<figure>
+									<a href={project.website_url} target="_blank" rel="noreferrer">
+										<ProjectIcon icon="Demo" />
+									</a>
+									<figcaption>Demo</figcaption>
+								</figure>
+							</li>
+						)}
+					</ul>
+				</aside>
 			</footer>
 		</article>
 	);

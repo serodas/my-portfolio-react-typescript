@@ -1,6 +1,8 @@
 export enum Languages {
 	Meta = "Meta",
 	Docker = "Docker",
+	GitHub = "GitHub",
+	Demo = "Demo",
 }
 
 export type Language = keyof typeof Languages;

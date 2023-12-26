@@ -19,9 +19,9 @@ export const Project = ({ repository }: { repository: ProjectRepository }) => {
 				<p className={styles.project_text__subtitle}>
 					En mis proyectos personales, aplico mis conocimientos y habilidades en el desarrollo de
 					aplicaciones web que ofrecen una experiencia de usuario óptima, dinámica y adaptativa,
-					siguiendo las buenas prácticas, normas de calidad y seguridad. También demuestro mi
-					competencia para crear, integrar, documentar APIs eficientes, flexibles y confiables,
-					utilizando diversas tecnologías. Algunos de mis proyectos son:
+					siguiendo las buenas prácticas. También demuestro mi competencia para crear, integrar,
+					documentar APIs eficientes, flexibles y confiables, utilizando diversas tecnologías.
+					Algunos de mis proyectos son:
 				</p>
 			</article>
 
