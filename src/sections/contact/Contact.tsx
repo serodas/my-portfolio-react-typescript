@@ -1,3 +1,6 @@
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import styles from "./Contact.module.scss";
 import Me from "./me.png";
 
@@ -19,19 +22,19 @@ export const Contact = () => {
 				<div className={styles.social_media__container__contact}>
 					<a
 						href="https://github.com/serodas"
-						className={`${styles.icon_button} ${styles.github}`}
+						className={`${styles.icon_button}`}
 						target="_blank"
 						rel="noreferrer"
 					>
-						<i className="fa-brands fa-github"></i>
+						<FontAwesomeIcon icon={faGithub} size="2xs" style={{ color: "#333" }} />
 					</a>
 					<a
 						href="https://linkedin.com/in/serodas"
-						className={`${styles.icon_button} ${styles.linkedin}`}
+						className={`${styles.icon_button}`}
 						target="_blank"
 						rel="noreferrer"
 					>
-						<i className="fa-brands fa-linkedin-in"></i>
+						<FontAwesomeIcon icon={faLinkedin} size="2xs" style={{ color: "#0e76a8" }} />
 					</a>
 				</div>
 

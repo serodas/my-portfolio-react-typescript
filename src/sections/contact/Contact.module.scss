@@ -113,8 +113,7 @@
   box-shadow: #4BA598 0px 5px 15px;
 }
 
-.icon_button i {
-  color: white;
+.icon_button svg {
   border-radius: 2.6rem;
   cursor: pointer;
   display: inline-block;
@@ -127,25 +126,5 @@
   user-select: none;
   width: 2.6rem;
   margin-bottom: 10px;
-}
-
-.linkedin i {
-  background-color: #0e76a8;
-  transition: all 0.2s ease-in-out;
-}
-
-.linkedin i:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #0e76a8;
-}
-
-.github i {
-  background-color: #333;
-  transition: all 0.2s ease-in-out;
-}
-
-.github i:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #333;
 }
 
