@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 
+import { ErrorBoundary } from "./ErrorBoundary";
 import { Footer } from "./footer/Footer";
 import { Header } from "./header/Header";
 import styles from "./Layout.module.scss";
@@ -9,7 +10,9 @@ export const Layout = () => {
 		<>
 			<main className={styles.main}>
 				<Header />
-				<Outlet />
+				<ErrorBoundary>
+					<Outlet />
+				</ErrorBoundary>
 				<Footer />
 			</main>
 		</>

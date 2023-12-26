@@ -1,0 +1,11 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  grid-area: section;
+	margin: 4rem;
+	padding: 4rem;
+}
+
+.section a {
+	text-decoration: none;
+}
