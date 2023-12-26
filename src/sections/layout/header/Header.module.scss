@@ -88,7 +88,31 @@
 }
 
 @media (max-width: 684px) {
-	.header .nav {
+	.header {
+		padding-top: 10px;
+		text-align: center;
+		margin-top: 0;
+	}
+	
+	.header .menu-btn {
+		display: block;
+	}
+	
+	.nav {
 		display: none;
 	}
+
+	.menu__btn {
+		display: block;
+	}
+	
+	.header nav ul {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	
+	.header li {
+		padding: 10px 20px;
+		margin: 2px 5px 20px 10px;
+	}	
 }

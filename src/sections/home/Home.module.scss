@@ -169,3 +169,48 @@
   color: #8b97b2;
   font-family: "Google Sans Regular";
 }
+
+@media (max-width: 580px) {
+	.section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		grid-area: section;
+	}
+	
+	.greeting_text__container {
+		width: 100%;
+		padding: 0 20px;
+	}
+	
+	.greeting_text__title {
+		font-size: 30px;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.greeting_text__subtitle {
+		font-size: 16px;
+		line-height: normal;
+		margin-bottom: 20px;
+	}
+	
+	.icon__container {
+		width: 100%;
+	}
+	
+	.software_skills__container,
+	.software_skills__container__arquitecture {
+		width: 100%;
+		padding: 0 20px;
+	}
+	
+	.software_skills__title {
+		font-size: 30px;
+	}
+	
+	.software_skills__container__list {
+		font-size: 16px;
+	}
+}
