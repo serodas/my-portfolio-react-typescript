@@ -80,4 +80,37 @@
   margin: 0 20px 35px 0;
 }
 
+@media (max-width: 580px) {
+	.section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		grid-area: section;
+	}
 
+	.icon__container {
+		width: 100%;
+	}
+
+	.experience_text__container {
+		width: 100%;
+		padding: 0 20px;
+	}
+	
+	.experience_text__title {
+		font-size: 30px;
+	}
+	
+	.experience_text__subtitle {
+		font-size: 16px;
+		line-height: normal;
+	}
+	
+	.experience_subtext__title {
+		font-size: 20px;
+	}
+	.work_skills__container__list {
+		font-size: 16px;
+	}
+}
