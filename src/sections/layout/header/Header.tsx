@@ -29,9 +29,9 @@ export const Header = () => {
 							</NavLink>
 						</li>
 						<li className="nav">
-							<a href="#" className={styles.contact}>
-								Contacto y CV
-							</a>
+							<NavLink to="/contact" className={styles.contact}>
+								Contáctame
+							</NavLink>
 						</li>
 						<li>
 							<button className={styles.menu__btn}>

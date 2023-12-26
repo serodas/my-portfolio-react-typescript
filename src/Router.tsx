@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import { Contact } from "./sections/contact/Contact";
 import { EducationFactory } from "./sections/education/EducationFactory";
 import { Experience } from "./sections/experience/Experience";
 import { Home } from "./sections/home/Home";
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
 			{
 				path: "/projects",
 				element: ProjectFactory.create(),
+			},
+			{
+				path: "/contact",
+				element: <Contact />,
 			},
 		],
 	},
