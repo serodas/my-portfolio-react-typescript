@@ -1,7 +1,10 @@
 export enum Languages {
-	Meta = "Meta",
 	Docker = "Docker",
+	JavaScript = "JavaScript",
 	GitHub = "GitHub",
+	Php = "Php",
+	Python = "Python",
+	React = "React",
 	Demo = "Demo",
 }
 
