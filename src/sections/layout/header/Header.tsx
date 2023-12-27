@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+import { Theme } from "../../../domain/Theme";
 import styles from "./Header.module.scss";
 
-export const Header = () => {
+export const Header = ({ theme }: { theme: Theme }) => {
 	const [toggleMenu, setToggleMenu] = useState(true);
 	const handleMenu = (toggleMenu: boolean) => {
 		setToggleMenu(!toggleMenu);
@@ -23,7 +24,12 @@ export const Header = () => {
 				<nav className={toggleMenu ? styles.nav : ""}>
 					<ul>
 						<li>
-							<NavLink to="/" className={styles.home} onClick={() => handleMenu(toggleMenu)}>
+							<NavLink
+								to="/"
+								className={styles.home}
+								onClick={() => handleMenu(toggleMenu)}
+								style={{ color: theme.primaryTextColor }}
+							>
 								Inicio
 							</NavLink>
 						</li>
@@ -32,6 +38,7 @@ export const Header = () => {
 								to="/education"
 								className={styles.education}
 								onClick={() => handleMenu(toggleMenu)}
+								style={{ color: theme.primaryTextColor }}
 							>
 								Educación
 							</NavLink>
@@ -41,6 +48,7 @@ export const Header = () => {
 								to="/experience"
 								className={styles.experience}
 								onClick={() => handleMenu(toggleMenu)}
+								style={{ color: theme.primaryTextColor }}
 							>
 								Experiencia
 							</NavLink>
@@ -50,6 +58,7 @@ export const Header = () => {
 								to="/projects"
 								className={styles.projects}
 								onClick={() => handleMenu(toggleMenu)}
+								style={{ color: theme.primaryTextColor }}
 							>
 								Proyectos
 							</NavLink>
@@ -59,6 +68,7 @@ export const Header = () => {
 								to="/contact"
 								className={styles.contact}
 								onClick={() => handleMenu(toggleMenu)}
+								style={{ color: theme.primaryTextColor }}
 							>
 								Contáctame
 							</NavLink>

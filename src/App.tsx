@@ -1,5 +1,10 @@
 import { Router } from "./Router";
+import { ThemeContextProvider } from "./ThemeContextProvider";
 
 export const App = () => {
-	return <Router />;
+	return (
+		<ThemeContextProvider>
+			<Router />
+		</ThemeContextProvider>
+	);
 };
