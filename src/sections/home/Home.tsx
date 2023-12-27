@@ -1,17 +1,20 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { Theme } from "../../domain/Theme";
 import CloudHosting from "./cloud_hosting.svg";
 import Freepick from "./freepick.svg";
 import styles from "./Home.module.scss";
 import WebDeveloper from "./web_developer.svg";
 
-export const Home = () => {
+export const Home = ({ theme }: { theme: Theme }) => {
 	return (
 		<section className={styles.section}>
 			<article className={styles.greeting_text__container}>
-				<h1 className={styles.greeting_text__title}>Hola 👋.</h1>
-				<p className={styles.greeting_text__subtitle}>
+				<h1 className={styles.greeting_text__title} style={{ color: theme.primaryTextColor }}>
+					Hola 👋.
+				</h1>
+				<p className={styles.greeting_text__subtitle} style={{ color: theme.secondaryTextColor }}>
 					Yo soy <span className={styles.greeting_text__fullname}>Samir Rodas</span>. Ingeniero de
 					Sistemas y Full-Stack Developer. Me interesan las buenas prácticas de programación, la
 					arquitectura de software y siempre estoy aprendiendo.
@@ -23,7 +26,7 @@ export const Home = () => {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<FontAwesomeIcon icon={faGithub} size="2xs" style={{ color: "#333" }} />
+						<FontAwesomeIcon icon={faGithub} size="2xs" style={{ color: theme.primaryTextColor }} />
 					</a>
 					<a
 						href="https://linkedin.com/in/serodas"
@@ -58,9 +61,14 @@ export const Home = () => {
 			</div>
 
 			<article className={styles.software_skills__container}>
-				<header className={styles.software_skills__title}>Desarrollo Full-Stack</header>
+				<header className={styles.software_skills__title} style={{ color: theme.primaryTextColor }}>
+					Desarrollo Full-Stack
+				</header>
 				<ul className={styles.dev_icons__container__soft_skills}>
-					<li className={styles.software_skill__container__inline}>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
 						<figure>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +84,10 @@ export const Home = () => {
 							<figcaption>HTML5</figcaption>
 						</figure>
 					</li>
-					<li className={styles.software_skill__container__inline}>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
 						<figure>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +103,10 @@ export const Home = () => {
 							<figcaption>CSS3</figcaption>
 						</figure>
 					</li>
-					<li className={styles.software_skill__container__inline}>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
 						<figure>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +122,10 @@ export const Home = () => {
 							<figcaption>JavaScript</figcaption>
 						</figure>
 					</li>
-					<li className={styles.software_skill__container__inline}>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
 						<figure>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +141,10 @@ export const Home = () => {
 							<figcaption>PHP</figcaption>
 						</figure>
 					</li>
-					<li className={styles.software_skill__container__inline}>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
 						<figure>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +160,10 @@ export const Home = () => {
 							<figcaption>ReactJS</figcaption>
 						</figure>
 					</li>
-					<li className={styles.software_skill__container__inline}>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
 						<figure>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +179,10 @@ export const Home = () => {
 							<figcaption>NPM</figcaption>
 						</figure>
 					</li>
-					<li className={styles.software_skill__container__inline}>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
 						<figure>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +198,10 @@ export const Home = () => {
 							<figcaption>Nodejs</figcaption>
 						</figure>
 					</li>
-					<li className={styles.software_skill__container__inline}>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
 						<figure>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -195,7 +224,10 @@ export const Home = () => {
 							<figcaption>MySQL</figcaption>
 						</figure>
 					</li>
-					<li className={styles.software_skill__container__inline}>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
 						<figure>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -218,7 +250,10 @@ export const Home = () => {
 							<figcaption>PostgreSQL</figcaption>
 						</figure>
 					</li>
-					<li className={styles.software_skill__container__inline}>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
 						<figure>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -241,7 +276,10 @@ export const Home = () => {
 							<figcaption>Apache</figcaption>
 						</figure>
 					</li>
-					<li className={styles.software_skill__container__inline}>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
 						<figure>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -257,7 +295,10 @@ export const Home = () => {
 							<figcaption>Git</figcaption>
 						</figure>
 					</li>
-					<li className={styles.software_skill__container__inline}>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
 						<figure>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -274,7 +315,10 @@ export const Home = () => {
 						</figure>
 					</li>
 				</ul>
-				<ul className={styles.software_skills__container__list}>
+				<ul
+					className={styles.software_skills__container__list}
+					style={{ color: theme.secondaryTextColor }}
+				>
 					<li>🔥Construcción de sitios web responsive usando ReactJS</li>
 					<li>
 						🔥Creación de aplicaciones Backend implementando Frameworks como ExpressJS, Django,
@@ -284,9 +328,14 @@ export const Home = () => {
 			</article>
 
 			<article className={styles.software_skills__container__arquitecture}>
-				<header className={styles.software_skills__title}>Infraestructura en la nube</header>
+				<header className={styles.software_skills__title} style={{ color: theme.primaryTextColor }}>
+					Infraestructura en la nube
+				</header>
 				<ul className={styles.dev_icons__container__arquitecture}>
-					<li className={styles.software_skill__container__inline}>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
 						<figure>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -302,7 +351,10 @@ export const Home = () => {
 							<figcaption>AWS</figcaption>
 						</figure>
 					</li>
-					<li className={styles.software_skill__container__inline}>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
 						<figure>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -319,7 +371,10 @@ export const Home = () => {
 						</figure>
 					</li>
 				</ul>
-				<ul className={styles.software_skills__container__list}>
+				<ul
+					className={styles.software_skills__container__list}
+					style={{ color: theme.secondaryTextColor }}
+				>
 					<li>🔥Experiencia trabajando con múltiples plataformas cloud</li>
 					<li>🔥Experiencia trabajando con contenedores Docker</li>
 				</ul>
