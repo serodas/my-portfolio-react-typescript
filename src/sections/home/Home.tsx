@@ -11,15 +11,15 @@ export const Home = ({ theme }: { theme: Theme }) => {
 	return (
 		<section className={styles.section}>
 			<article className={styles.greeting_text__container}>
-				<h1 className={styles.greeting_text__title} style={{ color: theme.primaryTextColor }}>
+				<header className={styles.greeting_text__title} style={{ color: theme.primaryTextColor }}>
 					Hola 👋.
-				</h1>
+				</header>
 				<p className={styles.greeting_text__subtitle} style={{ color: theme.secondaryTextColor }}>
 					Yo soy <span className={styles.greeting_text__fullname}>Samir Rodas</span>. Ingeniero de
 					Sistemas y Full-Stack Developer. Me interesan las buenas prácticas de programación, la
 					arquitectura de software y siempre estoy aprendiendo.
 				</p>
-				<div className={styles.social_media__container}>
+				<footer className={styles.social_media__container}>
 					<a
 						href="https://github.com/serodas"
 						className={`${styles.icon_button}`}
@@ -36,7 +36,7 @@ export const Home = ({ theme }: { theme: Theme }) => {
 					>
 						<FontAwesomeIcon icon={faLinkedin} size="2xs" style={{ color: "#0e76a8" }} />
 					</a>
-				</div>
+				</footer>
 			</article>
 
 			<div className={styles.icon__container}>
