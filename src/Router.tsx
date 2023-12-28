@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Contact } from "./sections/contact/Contact";
 import { EducationFactory } from "./sections/education/EducationFactory";
-import { Experience } from "./sections/experience/Experience";
+import { ExperienceFactory } from "./sections/experience/ExperienceFactory";
 import { HomeFactory } from "./sections/home/HomeFactory";
 import { LayoutFactory } from "./sections/layout/LayoutFactory";
 import { ProjectFactory } from "./sections/projects/ProjectFactory";
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "/experience",
-				element: <Experience />,
+				element: <ExperienceFactory />,
 			},
 			{
 				path: "/projects",
