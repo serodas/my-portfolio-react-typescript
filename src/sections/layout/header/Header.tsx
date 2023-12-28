@@ -26,7 +26,9 @@ export const Header = ({ theme }: { theme: Theme }) => {
 						<li>
 							<NavLink
 								to="/"
-								className={styles.home}
+								className={({ isActive }) =>
+									isActive ? `${styles.home} ${styles.active}` : styles.home
+								}
 								onClick={() => handleMenu(toggleMenu)}
 								style={{ color: theme.primaryTextColor }}
 							>
@@ -36,7 +38,9 @@ export const Header = ({ theme }: { theme: Theme }) => {
 						<li>
 							<NavLink
 								to="/education"
-								className={styles.education}
+								className={({ isActive }) =>
+									isActive ? `${styles.education} ${styles.active}` : styles.education
+								}
 								onClick={() => handleMenu(toggleMenu)}
 								style={{ color: theme.primaryTextColor }}
 							>
@@ -46,7 +50,9 @@ export const Header = ({ theme }: { theme: Theme }) => {
 						<li>
 							<NavLink
 								to="/experience"
-								className={styles.experience}
+								className={({ isActive }) =>
+									isActive ? `${styles.experience} ${styles.active}` : styles.experience
+								}
 								onClick={() => handleMenu(toggleMenu)}
 								style={{ color: theme.primaryTextColor }}
 							>
@@ -56,7 +62,9 @@ export const Header = ({ theme }: { theme: Theme }) => {
 						<li>
 							<NavLink
 								to="/projects"
-								className={styles.projects}
+								className={({ isActive }) =>
+									isActive ? `${styles.projects} ${styles.active}` : styles.projects
+								}
 								onClick={() => handleMenu(toggleMenu)}
 								style={{ color: theme.primaryTextColor }}
 							>
@@ -66,7 +74,9 @@ export const Header = ({ theme }: { theme: Theme }) => {
 						<li>
 							<NavLink
 								to="/contact"
-								className={styles.contact}
+								className={({ isActive }) =>
+									isActive ? `${styles.contact} ${styles.active}` : styles.contact
+								}
 								onClick={() => handleMenu(toggleMenu)}
 								style={{ color: theme.primaryTextColor }}
 							>

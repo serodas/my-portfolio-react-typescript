@@ -86,6 +86,10 @@
   color: #ffffff !important;
 }
 
+.active {
+	font-weight: bold;
+}
+
 @media (max-width: 684px) {
 	.header {
 		padding-top: 10px;
