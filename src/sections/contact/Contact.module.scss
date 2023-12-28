@@ -2,6 +2,8 @@
 	display: inline-flex;
 	flex-wrap: wrap;
 	grid-area: section;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .icon__container {
