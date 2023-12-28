@@ -1,8 +1,15 @@
 import { Certification } from "../../domain/Certification";
+import { Theme } from "../../domain/Theme";
 import styles from "./CertificationCard.module.scss";
 import { CertificationIcon } from "./CertificationIcon";
 
-export const CertificationCard = ({ certification }: { certification: Certification }) => {
+export const CertificationCard = ({
+	certification,
+	theme,
+}: {
+	certification: Certification;
+	theme: Theme;
+}) => {
 	return (
 		<article className={styles.certification_card}>
 			<figure>
@@ -10,13 +17,33 @@ export const CertificationCard = ({ certification }: { certification: Certificat
 			</figure>
 			<div className={styles.certification_text_container}>
 				<h2 className={styles.certification_text__title}>
-					<a href={certification.link} target="_blank" rel="noreferrer">
+					<a
+						href={certification.link}
+						target="_blank"
+						rel="noreferrer"
+						style={{ color: theme.primaryTextColor }}
+					>
 						{certification.title}
 					</a>
 				</h2>
-				<p className={styles.certification_text__subtitle}>{certification.issued_by}</p>
-				<p className={styles.certification_text__subtitle}>{certification.issued_on}</p>
-				<p className={styles.certification_text__subtitle}>{certification.duration}</p>
+				<p
+					className={styles.certification_text__subtitle}
+					style={{ color: theme.secondaryTextColor }}
+				>
+					{certification.issued_by}
+				</p>
+				<p
+					className={styles.certification_text__subtitle}
+					style={{ color: theme.secondaryTextColor }}
+				>
+					{certification.issued_on}
+				</p>
+				<p
+					className={styles.certification_text__subtitle}
+					style={{ color: theme.secondaryTextColor }}
+				>
+					{certification.duration}
+				</p>
 			</div>
 		</article>
 	);

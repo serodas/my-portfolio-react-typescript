@@ -1,12 +1,11 @@
-import React from "react";
-
 import { InMemoryCertificationRepository } from "../../infrastructure/InMemoryCertificationRepository";
+import { useThemeContext } from "../../ThemeContextProvider";
 import { Education } from "./Education";
 
 const repository = new InMemoryCertificationRepository();
 
-export class EducationFactory {
-	static create(): React.ReactElement {
-		return <Education repository={repository} />;
-	}
-}
+export const EducationFactory = () => {
+	const { theme } = useThemeContext();
+
+	return <Education repository={repository} theme={theme} />;
+};

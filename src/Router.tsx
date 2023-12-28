@@ -18,7 +18,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "/education",
-				element: EducationFactory.create(),
+				element: <EducationFactory />,
 			},
 			{
 				path: "/experience",
