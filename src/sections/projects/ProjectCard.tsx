@@ -1,12 +1,16 @@
 import { ProjectInterface } from "../../domain/ProjectInterface";
+import { Theme } from "../../domain/Theme";
 import styles from "./ProjectCard.module.scss";
 import { ProjectIcon } from "./ProjectIcon";
 
-export const ProjectCard = ({ project }: { project: ProjectInterface }) => {
+export const ProjectCard = ({ project, theme }: { project: ProjectInterface; theme: Theme }) => {
 	return (
-		<article className={styles.project__container}>
-			<header>{project.title}</header>
-			<p>{project.description}</p>
+		<article
+			className={styles.project__container}
+			style={{ backgroundColor: theme.ProjectCardColor }}
+		>
+			<header style={{ color: theme.primaryTextColor }}>{project.title}</header>
+			<p style={{ color: theme.primaryTextColor }}>{project.description}</p>
 			<footer className={styles.tecnologies__container}>
 				<aside className={styles.languages__container}>
 					<ul className={styles.dev_icons__container__soft_skills}>
@@ -14,7 +18,7 @@ export const ProjectCard = ({ project }: { project: ProjectInterface }) => {
 							<li className={styles.software_skill__container__inline} key={language}>
 								<figure>
 									<ProjectIcon icon={language} />
-									<figcaption>{language}</figcaption>
+									<figcaption style={{ color: theme.secondaryTextColor }}>{language}</figcaption>
 								</figure>
 							</li>
 						))}
@@ -27,7 +31,7 @@ export const ProjectCard = ({ project }: { project: ProjectInterface }) => {
 								<a href={project.github_url} target="_blank" rel="noreferrer">
 									<ProjectIcon icon="GitHub" />
 								</a>
-								<figcaption>GitHub</figcaption>
+								<figcaption style={{ color: theme.secondaryTextColor }}>GitHub</figcaption>
 							</figure>
 						</li>
 						{project.website_url && (
@@ -36,7 +40,7 @@ export const ProjectCard = ({ project }: { project: ProjectInterface }) => {
 									<a href={project.website_url} target="_blank" rel="noreferrer">
 										<ProjectIcon icon="Demo" />
 									</a>
-									<figcaption>Demo</figcaption>
+									<figcaption style={{ color: theme.secondaryTextColor }}>Demo</figcaption>
 								</figure>
 							</li>
 						)}

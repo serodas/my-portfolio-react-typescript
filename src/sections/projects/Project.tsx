@@ -1,9 +1,10 @@
 import { ProjectRepository } from "../../domain/ProjectRepository";
+import { Theme } from "../../domain/Theme";
 import styles from "./Project.module.scss";
 import { ProjectCard } from "./ProjectCard";
 import ProjectIcon from "./projects.svg";
 
-export const Project = ({ repository }: { repository: ProjectRepository }) => {
+export const Project = ({ repository, theme }: { repository: ProjectRepository; theme: Theme }) => {
 	const projects = repository.search();
 
 	return (
@@ -15,8 +16,10 @@ export const Project = ({ repository }: { repository: ProjectRepository }) => {
 			</div>
 
 			<article className={styles.project_text__container}>
-				<header className={styles.project_text__title}>Mis Proyectos</header>
-				<p className={styles.project_text__subtitle}>
+				<header className={styles.project_text__title} style={{ color: theme.primaryTextColor }}>
+					Mis Proyectos
+				</header>
+				<p className={styles.project_text__subtitle} style={{ color: theme.secondaryTextColor }}>
 					En mis proyectos personales, aplico mis conocimientos y habilidades en el desarrollo de
 					aplicaciones web que ofrecen una experiencia de usuario óptima, dinámica y adaptativa,
 					siguiendo las buenas prácticas. También demuestro mi competencia para crear, integrar,
@@ -27,7 +30,7 @@ export const Project = ({ repository }: { repository: ProjectRepository }) => {
 
 			<div className={styles.projects__container}>
 				{projects.map((project) => (
-					<ProjectCard key={project.id} project={project} />
+					<ProjectCard key={project.id} project={project} theme={theme} />
 				))}
 			</div>
 
