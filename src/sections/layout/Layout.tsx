@@ -14,7 +14,7 @@ export const Layout = ({ theme }: { theme: Theme }) => {
 				<ErrorBoundary>
 					<Outlet />
 				</ErrorBoundary>
-				<Footer />
+				<Footer theme={theme} />
 			</main>
 		</>
 	);
