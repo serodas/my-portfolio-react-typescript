@@ -10,6 +10,7 @@
 .header nav ul {
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
 	list-style: none;
 	padding: 10px;
 }
@@ -88,6 +89,14 @@
 
 .active {
 	font-weight: bold;
+}
+
+.button_theme_icon {
+	border: none;
+	outline: none;
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
 }
 
 @media (max-width: 684px) {

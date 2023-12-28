@@ -1,13 +1,31 @@
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import { Theme } from "../../../domain/Theme";
+import { darkTheme, lightTheme, Theme } from "../../../domain/Theme";
 import styles from "./Header.module.scss";
 
-export const Header = ({ theme }: { theme: Theme }) => {
+export const Header = ({
+	theme,
+	setTheme,
+}: {
+	theme: Theme;
+	setTheme: React.Dispatch<React.SetStateAction<Theme>>;
+}) => {
+	const themeIcon =
+		theme.name === "dark" ? (
+			<FontAwesomeIcon icon={faMoon} size="xl" style={{ color: "#A7A7A7" }} />
+		) : (
+			<FontAwesomeIcon icon={faSun} size="xl" style={{ color: "#F9D784" }} />
+		);
 	const [toggleMenu, setToggleMenu] = useState(true);
 	const handleMenu = (toggleMenu: boolean) => {
 		setToggleMenu(!toggleMenu);
+	};
+
+	const handleToggleTheme = () => {
+		setTheme((prevTheme) => (prevTheme.name === "light" ? darkTheme : lightTheme));
 	};
 
 	return (
@@ -82,6 +100,11 @@ export const Header = ({ theme }: { theme: Theme }) => {
 							>
 								Contáctame
 							</NavLink>
+						</li>
+						<li>
+							<button className={styles.button_theme_icon} onClick={handleToggleTheme}>
+								{themeIcon}
+							</button>
 						</li>
 					</ul>
 				</nav>

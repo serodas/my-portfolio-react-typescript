@@ -6,7 +6,8 @@ import { renderWithRouter } from "./RenderWithRouter";
 
 describe("Header section", () => {
 	it("show all list items", async () => {
-		renderWithRouter(<Header theme={lightTheme} />);
+		const setThemeMock = jest.fn();
+		renderWithRouter(<Header theme={lightTheme} setTheme={setThemeMock} />);
 		await screen.findByRole("link", {
 			name: "Inicio",
 		});
