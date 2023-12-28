@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { Contact } from "./sections/contact/Contact";
+import { ContactFactory } from "./sections/contact/ContactFactory";
 import { EducationFactory } from "./sections/education/EducationFactory";
 import { ExperienceFactory } from "./sections/experience/ExperienceFactory";
 import { HomeFactory } from "./sections/home/HomeFactory";
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "/contact",
-				element: <Contact />,
+				element: <ContactFactory />,
 			},
 		],
 	},
