@@ -5,6 +5,16 @@ export const certifications = [
 		issued_by: "Emitido por Coursera | Autorizado por Meta",
 		link: "https://www.coursera.org/account/accomplishments/specialization/C3RDH2G9WJHN",
 		icon: "meta_backend",
+		tags: [
+			"Django",
+			"Python",
+			"API endpoints",
+			"MySql",
+			"GitHub",
+			"Data Structure",
+			"Bash",
+			"Web Development",
+		],
 	},
 	{
 		id: "ad345asdfafdsfsdfasdfs4rtt",
@@ -12,6 +22,7 @@ export const certifications = [
 		issued_by: "Emitido por Coursera | Autorizado por Meta",
 		link: "https://www.coursera.org/account/accomplishments/specialization/C3RDH2G9WJHN",
 		icon: "meta",
+		tags: ["backend", "frontend"],
 	},
 	{
 		id: "ad345asdfafsdfsdfsdfsdfs4rtt",
@@ -19,5 +30,6 @@ export const certifications = [
 		issued_by: "Emitido por Coursera | Autorizado por Meta",
 		link: "https://www.coursera.org/account/accomplishments/specialization/C3RDH2G9WJHN",
 		icon: "meta",
+		tags: ["backend", "frontend"],
 	},
 ];

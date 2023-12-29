@@ -4,4 +4,5 @@ export interface Certification {
 	issued_by: string;
 	link: string;
 	icon: string;
+	tags: string[];
 }
