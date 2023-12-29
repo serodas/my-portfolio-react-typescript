@@ -11,8 +11,12 @@ export const CertificationCard = ({
 	theme: Theme;
 }) => {
 	return (
-		<article className={styles.certification_card}>
-			<figure>
+		<article
+			className={
+				theme.name === "dark" ? styles.certification_dark_card : styles.certification_light_card
+			}
+		>
+			<figure style={{ textAlign: "center", alignItems: "center" }}>
 				<CertificationIcon icon={certification.icon} />
 			</figure>
 			<div className={styles.certification_text_container}>

@@ -1,16 +1,21 @@
-.certification_card {
+.certification_light_card {
   border: 1px solid #eee;
   border-radius: 10px;
   margin: 2rem;
 }
 
-.certification_card:hover {
+.certification_dark_card {
+  border: 1px solid #62656c;
+  border-radius: 10px;
+  margin: 2rem;
+}
+
+.certification_light_card:hover {
   box-shadow: 0 20px 30px -10px #0003;
 }
 
-.certification_card figure {
-  text-align: center;
-  align-items: center;
+.certification_dark_card:hover {
+	box-shadow: 0 20px 30px -10px #fff3;
 }
 
 .certification_text_container {
