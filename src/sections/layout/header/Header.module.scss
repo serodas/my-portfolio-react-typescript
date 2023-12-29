@@ -91,12 +91,30 @@
 	font-weight: bold;
 }
 
-.button_theme_icon {
+.button_dark_icon {
 	border: none;
 	outline: none;
 	height: 45px;
 	width: 45px;
 	border-radius: 50%;
+	cursor: pointer;
+}
+
+.button_light_icon {
+	border: none;
+	outline: none;
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.button_dark_icon:hover {
+	box-shadow: rgb(100, 100, 100) 0px 3px 8px;
+}
+
+.button_light_icon:hover {
+	box-shadow: rgb(247, 215, 116) 0px 3px 8px;
 }
 
 @media (max-width: 684px) {

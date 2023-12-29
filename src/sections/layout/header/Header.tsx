@@ -102,7 +102,13 @@ export const Header = ({
 							</NavLink>
 						</li>
 						<li>
-							<button className={styles.button_theme_icon} onClick={handleToggleTheme}>
+							<button
+								className={
+									theme.name === "dark" ? styles.button_dark_icon : styles.button_light_icon
+								}
+								style={{ backgroundColor: theme.name === "dark" ? "#292c3f" : "#7cd1f7" }}
+								onClick={handleToggleTheme}
+							>
 								{themeIcon}
 							</button>
 						</li>
