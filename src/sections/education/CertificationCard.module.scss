@@ -21,21 +21,41 @@
 .certification_text_container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 1rem;
 }
 
 .certification_text__title a {
   font-size: 1.5rem;
   line-height: 40px;
-  margin: 30px 30px 30px 0;
   font-family: "Google Sans Medium";
 	text-decoration: none;
 }
 
 .certification_text__subtitle {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 40px;
-  margin: 5px 5px 5px 0;
   font-family: "Google Sans Regular";
+}
+
+.certification_footer {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 0 1rem 1rem 1rem;; 
+}
+
+.certification_tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: #55198b;
+	border-radius: 4px;
+	color: #f5f2f4;
+	font-size: .75rem;
+	height: 2em;
+	line-height: 1.5;
+	margin: 0 0.5rem 0 0;
+	padding: 0 0.75em;
+	white-space: nowrap;
 }

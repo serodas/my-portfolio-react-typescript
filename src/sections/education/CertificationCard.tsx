@@ -16,7 +16,7 @@ export const CertificationCard = ({
 				theme.name === "dark" ? styles.certification_dark_card : styles.certification_light_card
 			}
 		>
-			<figure style={{ textAlign: "center", alignItems: "center" }}>
+			<figure style={{ textAlign: "center", alignItems: "center", paddingTop: "1rem" }}>
 				<CertificationIcon icon={certification.icon} />
 			</figure>
 			<div className={styles.certification_text_container}>
@@ -36,19 +36,13 @@ export const CertificationCard = ({
 				>
 					{certification.issued_by}
 				</p>
-				<p
-					className={styles.certification_text__subtitle}
-					style={{ color: theme.secondaryTextColor }}
-				>
-					{certification.issued_on}
-				</p>
-				<p
-					className={styles.certification_text__subtitle}
-					style={{ color: theme.secondaryTextColor }}
-				>
-					{certification.duration}
-				</p>
 			</div>
+			<footer className={styles.certification_footer}>
+				<span className={styles.certification_tag}>Php</span>
+				<span className={styles.certification_tag}>Php</span>
+				<span className={styles.certification_tag}>Php</span>
+				<span className={styles.certification_tag}>Php</span>
+			</footer>
 		</article>
 	);
 };
