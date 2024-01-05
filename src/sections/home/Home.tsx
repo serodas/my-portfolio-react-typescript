@@ -5,7 +5,7 @@ import { Theme } from "../../domain/Theme";
 import CloudHosting from "./cloud_hosting.svg";
 import { FreepickSVG } from "./FreepickSVG";
 import styles from "./Home.module.scss";
-import WebDeveloper from "./web_developer.svg";
+import { WebDeveloperSVG } from "./WebDeveloperSVG";
 
 export const Home = ({ theme }: { theme: Theme }) => {
 	return (
@@ -56,7 +56,7 @@ export const Home = ({ theme }: { theme: Theme }) => {
 
 			<div className={styles.icon__container}>
 				<figure>
-					<img src={WebDeveloper} alt="web developer" />
+					<WebDeveloperSVG theme={theme} />
 				</figure>
 			</div>
 
