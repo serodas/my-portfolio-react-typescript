@@ -11,6 +11,16 @@
   justify-content: center;
   align-items: center;
   padding: 0 60px;
+	animation: 2s greeting_text__container ease-out;
+}
+
+@keyframes greeting_text__container {
+	0% {
+		transform: translateY(40px);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
 .greeting_text__title {
@@ -66,6 +76,16 @@
   width: 50%;
   display: flex;
   justify-content: center;
+	animation: 2s icon__container ease-out;
+}
+
+@keyframes icon__container {
+	0% {
+		transform: translateY(40px);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
 .icon__container figure {
