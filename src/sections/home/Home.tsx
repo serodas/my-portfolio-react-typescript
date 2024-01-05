@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Theme } from "../../domain/Theme";
 import CloudHosting from "./cloud_hosting.svg";
-import Freepick from "./freepick.svg";
+import { FreepickSVG } from "./FreepickSVG";
 import styles from "./Home.module.scss";
 import WebDeveloper from "./web_developer.svg";
 
@@ -41,7 +41,7 @@ export const Home = ({ theme }: { theme: Theme }) => {
 
 			<div className={styles.icon__container}>
 				<figure>
-					<img src={Freepick} alt="freelancer programming" />
+					<FreepickSVG theme={theme} />
 					<figcaption>
 						<a
 							href="https://www.freepik.com/free-vector/telecommuting-concept_7402029.htm#page=3&query=person%20in%20laptop&position=3&from_view=search&track=ais&uuid=3ee160db-db74-4893-9d33-835e3bd2310d"

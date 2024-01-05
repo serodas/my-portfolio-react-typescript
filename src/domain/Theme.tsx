@@ -4,6 +4,7 @@ export interface Theme {
 	primaryTextColor: string;
 	secondaryTextColor: string;
 	ProjectCardColor: string;
+	svgColor: string;
 }
 
 export const lightTheme: Theme = {
@@ -12,6 +13,7 @@ export const lightTheme: Theme = {
 	primaryTextColor: "#343434",
 	secondaryTextColor: "#7F8DAA",
 	ProjectCardColor: "#DCE4F2",
+	svgColor: "#FFFFFF",
 };
 
 export const darkTheme: Theme = {
@@ -20,4 +22,5 @@ export const darkTheme: Theme = {
 	primaryTextColor: "#FFFFFF",
 	secondaryTextColor: "#8D8D8D",
 	ProjectCardColor: "#292A2D",
+	svgColor: "#8D8D8D",
 };
