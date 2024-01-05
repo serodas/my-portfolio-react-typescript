@@ -8,6 +8,18 @@
   width: 50%;
   display: flex;
   justify-content: center;
+	animation: 2s icon__container_project ease-in-out;
+}
+
+@keyframes icon__container_project {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .icon__container figure {
@@ -38,6 +50,18 @@
   justify-content: center;
   align-items: start;
   padding: 0 60px;
+	animation: 2s project_text__container ease-in-out;
+}
+
+@keyframes project_text__container {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .project_text__title {
@@ -68,6 +92,18 @@
   margin-right: 40px;
   margin-top: 60px;
   width: 100%;
+	animation: 2s projects__container ease-in-out;
+}
+
+@keyframes projects__container {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .github_button__container {
