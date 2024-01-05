@@ -8,7 +8,7 @@
   width: 50%;
   display: flex;
   justify-content: center;
-	animation: 2s icon__container_project ease-in-out;
+	animation: 1s icon__container_project ease-in-out;
 }
 
 @keyframes icon__container_project {
@@ -50,7 +50,7 @@
   justify-content: center;
   align-items: start;
   padding: 0 60px;
-	animation: 2s project_text__container ease-in-out;
+	animation: 1s project_text__container ease-in-out;
 }
 
 @keyframes project_text__container {

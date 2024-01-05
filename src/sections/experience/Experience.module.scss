@@ -10,7 +10,7 @@
   width: 50%;
   display: flex;
   justify-content: center;
-	animation: 2s icon__container_experience ease-in-out;
+	animation: 1s icon__container_experience ease-in-out;
 }
 
 @keyframes icon__container_experience {
@@ -45,7 +45,7 @@
   justify-content: center;
   align-items: start;
   padding: 0 60px;
-	animation: 2s experience_text__container ease-in-out;
+	animation: 1s experience_text__container ease-in-out;
 }
 
 @keyframes experience_text__container {
