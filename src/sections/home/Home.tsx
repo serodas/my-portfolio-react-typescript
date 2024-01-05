@@ -2,7 +2,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Theme } from "../../domain/Theme";
-import CloudHosting from "./cloud_hosting.svg";
+import { CloudHostingSVG } from "./CloudHostingSVG";
 import { FreepickSVG } from "./FreepickSVG";
 import styles from "./Home.module.scss";
 import { WebDeveloperSVG } from "./WebDeveloperSVG";
@@ -382,7 +382,7 @@ export const Home = ({ theme }: { theme: Theme }) => {
 
 			<div className={styles.icon__container}>
 				<figure>
-					<img src={CloudHosting} alt="cloud hosting" />
+					<CloudHostingSVG theme={theme} />
 				</figure>
 			</div>
 		</section>
