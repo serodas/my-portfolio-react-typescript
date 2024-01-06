@@ -2,7 +2,7 @@ import { CertificationRepository } from "../../domain/CertificationRepository";
 import { Theme } from "../../domain/Theme";
 import { CertificationCard } from "./CertificationCard";
 import styles from "./Education.module.scss";
-import EducationSvg from "./education.svg";
+import { EducationSVG } from "./EducationSVG";
 import UnadIcon from "./unad_icon.svg";
 
 export const Education = ({
@@ -18,7 +18,7 @@ export const Education = ({
 		<section className={styles.section}>
 			<div className={styles.icon__container}>
 				<figure>
-					<img src={EducationSvg} alt="education svg" />
+					<EducationSVG theme={theme} />
 				</figure>
 			</div>
 
