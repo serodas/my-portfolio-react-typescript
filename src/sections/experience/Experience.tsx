@@ -1,5 +1,5 @@
 import { Theme } from "../../domain/Theme";
-import DevProductivityIcon from "./dev_productivity.svg";
+import { DevProductivitySVG } from "./DevProductivitySVG";
 import styles from "./Experience.module.scss";
 
 export const Experience = ({ theme }: { theme: Theme }) => {
@@ -7,7 +7,7 @@ export const Experience = ({ theme }: { theme: Theme }) => {
 		<section className={styles.section}>
 			<div className={styles.icon__container}>
 				<figure>
-					<img src={DevProductivityIcon} alt="dev productivity" />
+					<DevProductivitySVG theme={theme} />
 				</figure>
 			</div>
 
