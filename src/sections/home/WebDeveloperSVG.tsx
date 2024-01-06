@@ -4,8 +4,6 @@ export const WebDeveloperSVG = ({ theme }: { theme: Theme }) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		data-name="Layer 1"
-		width="773.11417"
-		height="610.8036"
 		viewBox="0 0 773.11417 610.8036"
 		xmlnsXlink="http://www.w3.org/1999/xlink"
 	>

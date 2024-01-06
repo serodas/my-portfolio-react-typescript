@@ -4,8 +4,6 @@ export const DevProductivitySVG = ({ theme }: { theme: Theme }) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		data-name="Layer 1"
-		width="930.98585"
-		height="797.33491"
 		viewBox="0 0 930.98585 797.33491"
 		xmlnsXlink="http://www.w3.org/1999/xlink"
 	>
