@@ -1,10 +1,13 @@
 import { Outlet } from "react-router-dom";
 
 import { Theme } from "../../domain/Theme";
+import { LocalStorageThemeRepository } from "../../infrastructure/LocalStorageThemeRepository";
 import { ErrorBoundary } from "./ErrorBoundary";
 import { Footer } from "./footer/Footer";
 import { Header } from "./header/Header";
 import styles from "./Layout.module.scss";
+
+const repository = new LocalStorageThemeRepository();
 
 export const Layout = ({
 	theme,
@@ -16,7 +19,7 @@ export const Layout = ({
 	return (
 		<>
 			<main className={styles.main} style={{ backgroundColor: theme.bodyColor }}>
-				<Header theme={theme} setTheme={setTheme} />
+				<Header theme={theme} setTheme={setTheme} repository={repository} />
 				<ErrorBoundary>
 					<Outlet />
 				</ErrorBoundary>

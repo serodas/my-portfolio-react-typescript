@@ -4,14 +4,17 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import { darkTheme, lightTheme, Theme } from "../../../domain/Theme";
+import { ThemeRepository } from "../../../domain/ThemeRepository";
 import styles from "./Header.module.scss";
 
 export const Header = ({
 	theme,
 	setTheme,
+	repository,
 }: {
 	theme: Theme;
 	setTheme: React.Dispatch<React.SetStateAction<Theme>>;
+	repository: ThemeRepository;
 }) => {
 	const themeIcon =
 		theme.name === "dark" ? (
@@ -25,7 +28,12 @@ export const Header = ({
 	};
 
 	const handleToggleTheme = () => {
-		setTheme((prevTheme) => (prevTheme.name === "light" ? darkTheme : lightTheme));
+		setTheme((prevTheme) => {
+			const newTheme = prevTheme.name === "dark" ? lightTheme : darkTheme;
+			repository.save(newTheme);
+
+			return newTheme;
+		});
 	};
 
 	return (

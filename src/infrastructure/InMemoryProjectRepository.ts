@@ -8,7 +8,7 @@ export class InMemoryProjectRepository implements ProjectRepository {
 			...project,
 			languages: project.languages.map(
 				(language: string): Language =>
-					Object.values(Languages).find((lang) => lang === language) ?? Languages.Meta
+					Object.values(Languages).find((lang) => lang === language) ?? Languages.Demo
 			),
 		}));
 	}
