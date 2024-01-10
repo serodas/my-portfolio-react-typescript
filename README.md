@@ -3,11 +3,21 @@
 </h1>
 
 <p align="center">
-  Software Developer Portfolio Template in React with TypeScript following best practices: Unit and end-to-end tests, Continuous Integration, and linting.
+  Software Developer Portfolio Template in React with TypeScript following best practices: Unit and end-to-end tests, Continuous Integration, and linting. This is a complete customizable template which lets you showcase your work, education and experience about you as Software Developer.
   <br />
   <br />
   <a href="https://github.com/serodas/my-portfolio-react-typescript">Stars are welcome 😊</a>
 </p>
+
+# Preview
+![Preview](/src/assets/images/portfolio.gif)
+
+# Sections
+- Home
+- Education
+- Experience
+- Projects
+- Contact
 
 ## ⚡ Using this template
 
@@ -58,3 +68,11 @@
 - [Makefile](https://github.com/CodelyTV/vite-react_best_practices-template/blob/main/Makefile) for standardize how to run projects
 - [Sass](https://sass-lang.com) to supercharge CSS with nested classes and more fun
 - [.editorconfig](https://editorconfig.org) for sharing the IDE config
+
+# illustrations 🍥
+
+- [UnDraw](https://undraw.co/illustrations)
+
+# References
+Based on https://github.com/harikanani/harikanani.github.io
+Illustrations: https://undraw.co/
