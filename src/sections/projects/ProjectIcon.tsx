@@ -5,10 +5,14 @@ import {
 	faPhp,
 	faPython,
 	faReact,
+	faSass,
 } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import DjangoLogo from "../../assets/icons/django.svg";
+import MySQLIcon from "../../assets/icons/mysql_official.svg";
+import TypeScriptLogo from "../../assets/icons/ts_logo.svg";
 import { Language } from "../../domain/ProjectInterface";
 
 type IconTypes = {
@@ -23,6 +27,10 @@ const iconTypes: IconTypes = {
 	Python: () => <FontAwesomeIcon icon={faPython} style={{ color: "#3776ab" }} size="xs" />,
 	React: () => <FontAwesomeIcon icon={faReact} style={{ color: "#61dafb" }} size="xs" />,
 	Demo: () => <FontAwesomeIcon icon={faGlobe} size="xs" style={{ color: "#586069" }} />,
+	TypeScript: () => <img src={TypeScriptLogo} alt="typescript logo" width={31.5} height={36}></img>,
+	Sass: () => <FontAwesomeIcon icon={faSass} size="xs" style={{ color: "#CF649A" }} />,
+	Django: () => <img src={DjangoLogo} alt="django logo" width={31.5} height={36}></img>,
+	MySQL: () => <img src={MySQLIcon} alt="mysql icon" width={31.5} height={36}></img>,
 };
 
 export const ProjectIcon = ({ icon }: { icon: keyof IconTypes }) => {

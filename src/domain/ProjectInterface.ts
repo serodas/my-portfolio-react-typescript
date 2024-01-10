@@ -6,6 +6,10 @@ export enum Languages {
 	Python = "Python",
 	React = "React",
 	Demo = "Demo",
+	TypeScript = "TypeScript",
+	Sass = "Sass",
+	Django = "Django",
+	MySQL = "MySQL",
 }
 
 export type Language = keyof typeof Languages;
