@@ -93,6 +93,7 @@
     "jest-environment-jsdom": "^29.5.0",
     "jest-mock-extended": "^3.0.5",
     "jest-transform-stub": "^2.0.0",
+    "postcss-less": "^6.0.0",
     "sass": "^1.60.0",
     "stylelint": "^14.16.1",
     "stylelint-config-rational-order": "^0.0.4",
