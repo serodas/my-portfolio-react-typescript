@@ -63,3 +63,12 @@
 .certification_tag:hover {
 	background: #8c43ce;
 }
+
+@media (max-width: 580px) {
+	.certification_text__title a {
+		font-size: 16px;
+	}
+	.certification_text__subtitle {
+		font-size: 14px;
+	}
+}
