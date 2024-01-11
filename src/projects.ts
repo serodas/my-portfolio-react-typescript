@@ -18,13 +18,13 @@ export const projects = [
 		website_url: "",
 	},
 	{
-		id: "kjlkjklkjlk",
-		title: "Project 3",
+		id: "b0b7b071-ca1f-4d83-ba49-b9f918acba75",
+		title: "Generador de informes",
 		description:
-			"Split your bills with your friends without any hassle. Manage Group Expenses, Track your expenses, and much more.",
-		languages: ["Php", "Python", "JavaScript", "React"],
-		github_url: "https://github.com/serodas",
-		website_url: "https://github.com/serodas",
+			"Este proyecto es un generador de informes que se conecta a una base de datos SQL Server. Está desarrollado en Symfony 3.4 y permite a los usuarios crear y exportar datos.",
+		languages: ["Php", "Symfony", "JavaScript", "Bootstrap", "jQuery"],
+		github_url: "https://github.com/serodas/cierres-aloha",
+		website_url: "",
 	},
 	{
 		id: "hjkuiluiliouloi",

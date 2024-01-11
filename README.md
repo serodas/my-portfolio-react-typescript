@@ -3,7 +3,8 @@
 </h1>
 
 <p align="center">
-  Software Developer Portfolio Template in React with TypeScript following best practices: Unit and end-to-end tests, Continuous Integration, and linting. This is a complete customizable template which lets you showcase your work, education and experience about you as Software Developer.
+  Software Developer Portfolio Template in React with TypeScript following best practices: Unit and end-to-end tests, Continuous Integration, and linting.
+	This is a complete customizable template which lets you showcase your work, education and experience about you as Software Developer.
   <br />
   <br />
   <a href="https://github.com/serodas/my-portfolio-react-typescript">Stars are welcome 😊</a>

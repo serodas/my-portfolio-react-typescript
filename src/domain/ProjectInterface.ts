@@ -10,6 +10,9 @@ export enum Languages {
 	Sass = "Sass",
 	Django = "Django",
 	MySQL = "MySQL",
+	Symfony = "Symfony",
+	Bootstrap = "Bootstrap",
+	jQuery = "jQuery",
 }
 
 export type Language = keyof typeof Languages;
