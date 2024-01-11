@@ -78,6 +78,6 @@ export const certifications = [
 		issued_by: "Emitido por Platzi",
 		link: "https://platzi.com/p/serodas/curso/1901-symfony-framework/diploma/detalle/",
 		icon: "platzi",
-		tags: ["PHP", "Symfony", "Formularios", "Seguridad"],
+		tags: ["PHP", "Symfony", "Formularios"],
 	},
 ];
