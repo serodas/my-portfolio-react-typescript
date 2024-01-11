@@ -1,4 +1,5 @@
 import {
+	faAngular,
 	faBootstrap,
 	faDocker,
 	faGithub,
@@ -37,6 +38,7 @@ const iconTypes: IconTypes = {
 	Symfony: () => <img src={SymfonyIcon} alt="symfony icon" width={31.5} height={36}></img>,
 	Bootstrap: () => <FontAwesomeIcon icon={faBootstrap} size="xs" style={{ color: "#7310f5" }} />,
 	jQuery: () => <img src={jQueryIcon} alt="jquery icon" width={31.5} height={36}></img>,
+	Angular: () => <FontAwesomeIcon icon={faAngular} style={{ color: "#dd0330" }} size="xs" />,
 };
 
 export const ProjectIcon = ({ icon }: { icon: keyof IconTypes }) => {

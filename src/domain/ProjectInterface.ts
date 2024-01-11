@@ -13,6 +13,7 @@ export enum Languages {
 	Symfony = "Symfony",
 	Bootstrap = "Bootstrap",
 	jQuery = "jQuery",
+	Angular = "Angular",
 }
 
 export type Language = keyof typeof Languages;
