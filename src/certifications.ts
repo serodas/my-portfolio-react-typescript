@@ -72,4 +72,12 @@ export const certifications = [
 		icon: "symfony",
 		tags: ["PHP", "Symfony", "Autenticación", "Seguridad"],
 	},
+	{
+		id: "49e6f099-b593-482d-b996-5d49e8e48c80",
+		title: "Curso de Symfony Framework",
+		issued_by: "Emitido por Platzi",
+		link: "https://platzi.com/p/serodas/curso/1901-symfony-framework/diploma/detalle/",
+		icon: "platzi",
+		tags: ["PHP", "Symfony", "Formularios", "Seguridad"],
+	},
 ];
