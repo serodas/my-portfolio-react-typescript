@@ -31,23 +31,33 @@ export const Experience = ({ theme }: { theme: Theme }) => {
 					style={{ color: theme.secondaryTextColor }}
 				>
 					<li>
-						🔥Realizar el análisis de los requisitos y necesidades de los clientes para la
-						aplicación
+						🔥Diseñar, implementar y mantener aplicaciones web desarrolladas en PHP con Symfony para
+						la gestión de procesos internos y externos de la entidad, tales como el sistema de
+						jornadas escolares complementarias, el portal web institucional, el sistema de
+						asignación de subsidios de vivienda y el sistema para crédito social.
 					</li>
-					<li>
+					{/* <li>
 						🔥Desarrollar e implementar aplicaciones web usando diversos frameworks como Symfony,
 						Laravel, Django, ExpressJS y ReactJS
+					</li> */}
+					<li>
+						🔥 Colaborar con otros desarrolladores, analistas y usuarios finales para definir los
+						requisitos, especificaciones y pruebas de los proyectos asignados, siguiendo las
+						metodologías ágiles y los estándares de calidad establecidos.
 					</li>
 					<li>
-						🔥Realizar el mantenimiento y la actualización de las aplicaciones de acuerdo a los
-						cambios solicitados por los clientes
+						🔥Investigar y aprender constantemente nuevas herramientas, frameworks y buenas
+						prácticas para mejorar el rendimiento, la seguridad y la usabilidad de las aplicaciones
+						desarrolladas.
 					</li>
 					<li>
-						🔥Refactorizar código para mejorar la confiabilidad, escalabilidad y mantenibilidad
+						🔥Liderar el proceso de migración de algunas aplicaciones legacy a tecnologías más
+						modernas y eficientes, logrando reducir los tiempos de carga, optimizar los recursos y
+						facilitar el mantenimiento.
 					</li>
 					<li>
-						🔥Optimizar consultas SQL para mejorar el rendimiento de la aplicación y reducir tiempos
-						de respuesta
+						🔥Capacitar y asesorar a otros desarrolladores y usuarios en el uso de las aplicaciones
+						desarrolladas, resolviendo dudas, problemas y sugerencias.
 					</li>
 				</ul>
 			</article>
