@@ -27,13 +27,13 @@ export const projects = [
 		website_url: "",
 	},
 	{
-		id: "hjkuiluiliouloi",
-		title: "Project 4",
+		id: "e352af3d-4ea3-4fb2-85c4-d2cf3f859f08",
+		title: "Backend de becas",
 		description:
-			"Split your bills with your friends without any hassle. Manage Group Expenses, Track your expenses, and much more.",
-		languages: ["Php", "Python", "JavaScript", "React"],
-		github_url: "https://github.com/serodas",
-		website_url: "https://github.com/serodas",
+			"Backend en Symfony 4 que facilita la postulación a una beca de los mejores graduados de secundaria de instituciones educativas.",
+		languages: ["Php", "Symfony", "MySQL", "Docker"],
+		github_url: "https://github.com/serodas/scholarship-backend",
+		website_url: "",
 	},
 	{
 		id: "fadsekjoooooooioi",
