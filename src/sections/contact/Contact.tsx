@@ -43,7 +43,7 @@ export const Contact = ({ theme }: { theme: Theme }) => {
 
 				<footer className={styles.github_button__container}>
 					<a
-						href="https://github.com/serodas"
+						href="https://docs.google.com/document/d/1raoslUgp1-zC0HiDbC6Q8tyogTgyQaWu/edit?usp=sharing&ouid=101598297610207090200&rtpof=true&sd=true"
 						className={styles.button__primary}
 						target="_blank"
 						rel="noopener noreferrer"
