@@ -228,3 +228,45 @@
 	}
 }
 
+@media (max-width: 768px) {
+	.education_text__container {
+		padding: 0 20px;
+	}
+	
+	.education_text__title {
+		font-size: 30px;
+	}
+	
+	.education_subtext__title {
+		font-size: 20px;
+	}
+	
+	.education_text__subtitle {
+		font-size: 16px;
+		line-height: normal;
+	}
+
+	.education__header {
+		font-size: 30px;
+	}
+	
+	.degree_text_container {
+		padding: 0 20px;
+	}
+	
+	.degree_text__title {
+		font-size: 16px;
+	}
+	
+	.degree_text__subtitle {
+		font-size: 14px;
+	}
+	
+	.degree_text__subtitle_year {
+		font-size: 12px;
+	}
+	
+	.education_container__header {
+		font-size: 30px;
+	}
+}

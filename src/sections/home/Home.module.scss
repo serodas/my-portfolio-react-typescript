@@ -235,3 +235,29 @@
 		font-size: 16px;
 	}
 }
+
+@media (max-width: 768px) {
+	.greeting_text__container {
+		padding: 0 20px;
+	}
+
+	.greeting_text__title {
+		font-size: 30px;
+	}
+	.greeting_text__subtitle {
+		font-size: 16px;
+		line-height: normal;
+	}
+
+	.software_skills__container__arquitecture {
+		padding: 0 20px;
+	}
+
+	.software_skills__title {
+		font-size: 30px;
+	}
+	
+	.software_skills__container__list {
+		font-size: 16px;
+	}
+}
