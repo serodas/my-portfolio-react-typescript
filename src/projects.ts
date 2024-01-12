@@ -6,7 +6,7 @@ export const projects = [
 			"Portafolio para desarrolladores de software en React con TypeScript siguiendo las mejores prácticas: pruebas unitarias y de extremo a extremo, integración continua y linting.",
 		languages: ["React", "TypeScript", "Sass"],
 		github_url: "https://github.com/serodas/my-portfolio-react-typescript",
-		website_url: "https://github.com/serodas",
+		website_url: "https://serodas.com",
 	},
 	{
 		id: "2dca8911-5bcb-4c32-a606-b51425155604",

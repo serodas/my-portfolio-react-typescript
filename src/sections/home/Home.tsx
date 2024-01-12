@@ -1,6 +1,8 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import DjangoLogo from "../../assets/icons/django.svg";
+import SymfonyIcon from "../../assets/icons/symfony_black.svg";
 import { Theme } from "../../domain/Theme";
 import { CloudHostingSVG } from "./CloudHostingSVG";
 import { FreepickSVG } from "./FreepickSVG";
@@ -17,7 +19,7 @@ export const Home = ({ theme }: { theme: Theme }) => {
 				<p className={styles.greeting_text__subtitle} style={{ color: theme.secondaryTextColor }}>
 					Yo soy <span className={styles.greeting_text__fullname}>Samir Rodas</span>. Ingeniero de
 					Sistemas y Full-Stack Developer. Me interesan las buenas prácticas de programación, la
-					arquitectura de software y siempre estoy aprendiendo.
+					arquitectura de software y siempre estoy aprendiendo 🤓
 				</p>
 				<footer className={styles.social_media__container}>
 					<a
@@ -314,6 +316,43 @@ export const Home = ({ theme }: { theme: Theme }) => {
 							<figcaption>Python</figcaption>
 						</figure>
 					</li>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
+						<figure>
+							<img src={SymfonyIcon} alt="symfony icon" width={48} height={48}></img>
+							<figcaption>Symfony</figcaption>
+						</figure>
+					</li>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
+						<figure>
+							<img src={DjangoLogo} alt="django logo" width={48} height={48}></img>
+							<figcaption>Django</figcaption>
+						</figure>
+					</li>
+					<li
+						className={styles.software_skill__container__inline}
+						style={{ color: theme.secondaryTextColor }}
+					>
+						<figure>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="1em"
+								width="1em"
+								viewBox="0 0 448 512"
+							>
+								<path
+									fill="#dd0330"
+									d="M185.7 268.1h76.2l-38.1-91.6-38.1 91.6zM223.8 32L16 106.4l31.8 275.7 176 97.9 176-97.9 31.8-275.7zM354 373.8h-48.6l-26.2-65.4H168.6l-26.2 65.4H93.7L223.8 81.5z"
+								/>
+							</svg>
+							<figcaption>Angular</figcaption>
+						</figure>
+					</li>
 				</ul>
 				<ul
 					className={styles.software_skills__container__list}
@@ -377,6 +416,7 @@ export const Home = ({ theme }: { theme: Theme }) => {
 				>
 					<li>🔥Experiencia trabajando con múltiples plataformas cloud</li>
 					<li>🔥Experiencia trabajando con contenedores Docker</li>
+					<li>🔥Apoyar la transformación digital de las empresas</li>
 				</ul>
 			</article>
 

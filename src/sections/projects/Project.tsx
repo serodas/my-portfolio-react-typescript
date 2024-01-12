@@ -20,11 +20,11 @@ export const Project = ({ repository, theme }: { repository: ProjectRepository; 
 					Mis Proyectos
 				</header>
 				<p className={styles.project_text__subtitle} style={{ color: theme.secondaryTextColor }}>
-					En mis proyectos personales, aplico mis conocimientos y habilidades en el desarrollo de
-					aplicaciones web que ofrecen una experiencia de usuario óptima, dinámica y adaptativa,
-					siguiendo las buenas prácticas. También demuestro mi competencia para crear, integrar,
-					documentar APIs eficientes, flexibles y confiables, utilizando diversas tecnologías.
-					Algunos de mis proyectos son:
+					En los proyectos aplico mis conocimientos y habilidades en el desarrollo de aplicaciones
+					web que ofrecen una experiencia de usuario óptima, dinámica y adaptativa, siguiendo las
+					buenas prácticas de programación. También demuestro mi competencia para crear, integrar,
+					documentar APIs eficientes, flexibles y confiables, utilizando diversas tecnologías como
+					Symfony y Django. Algunos de mis proyectos son:
 				</p>
 			</article>
 

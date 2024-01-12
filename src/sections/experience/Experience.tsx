@@ -23,7 +23,7 @@ export const Experience = ({ theme }: { theme: Theme }) => {
 				</p>
 
 				<h3 className={styles.experience_subtext__title} style={{ color: theme.primaryTextColor }}>
-					Mis principales responsabilidades son:
+					Mis principales responsabilidades y logros son:
 				</h3>
 
 				<ul

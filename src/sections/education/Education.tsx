@@ -39,7 +39,7 @@ export const Education = ({
 
 			<div className={styles.education_container}>
 				<h1 className={styles.education__header} style={{ color: theme.primaryTextColor }}>
-					Titulo Profesional
+					Educación
 				</h1>
 				<article className={styles.degree_container}>
 					<figure>
