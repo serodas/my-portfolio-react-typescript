@@ -26,4 +26,13 @@ export const projects = [
 		github_url: "https://github.com/serodas/scholarship-frontend",
 		website_url: "",
 	},
+	{
+		id: "8f70b95d-f371-470a-9915-66a10eb4a2d5",
+		title: "Librarify PHP DDD",
+		description:
+			"Librarify is a monorepo with Hexagonal Architecture + DDD + CQRS in PHP using Symfony 6 🐘🎯",
+		languages: ["Php", "MySQL", "Docker"],
+		github_url: "https://github.com/serodas/librarify-php-ddd.git",
+		website_url: "",
+	},
 ];
