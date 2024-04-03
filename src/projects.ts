@@ -26,13 +26,4 @@ export const projects = [
 		github_url: "https://github.com/serodas/scholarship-frontend",
 		website_url: "",
 	},
-	{
-		id: "19d3e1a5-4cbd-4948-be08-0374b58b85fa",
-		title: "Restaurante LittleLemon",
-		description:
-			"Este proyecto es un sistema de gestión de restaurantes que permite al usuario crear un menú, agregar elementos al menú, crear una reserva y asignar una mesa a la reserva.",
-		languages: ["Python", "Django", "Docker", "MySQL"],
-		github_url: "https://github.com/serodas/LittleLemon",
-		website_url: "",
-	},
 ];
